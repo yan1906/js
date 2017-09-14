@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<title>Округление</title>
+	<script>
+		// Math - объект для работы с математическими операциям
+		// Math.floor - Округляет вниз
+		// Math.ceil - Округляет вверх
+		// Math.round - Округляет до ближайшего целого
+
+		var productPrice = 13.375;
+		console.log(Math.floor(productPrice)); // 13
+		console.log(Math.ceil(productPrice)); // 14
+		console.log(Math.round(productPrice)); // 13
+
+		// Округление с точностью до сотых
+		// 13.375 -> 1337.5 -> 1338 -> 13.38
+		console.log(Math.round(productPrice*100)/100); // 13.38
+		console.log(Math.round(productPrice*10)/10); // 13.38
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

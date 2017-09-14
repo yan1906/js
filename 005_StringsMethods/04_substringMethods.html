@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<title>Методы взятия подстроки</title>
+	<script>
+	
+		var str = 'I\'m a JavaScript programmer';
+		// substring(start [, end])
+		// Метод substring(start, end) возвращает подстроку с позиции start до, но не включая end.
+
+		console.log(str.substring(6)); // JavaScript programmer
+		console.log(str.substring(6, 16)); // JavaScript
+
+		// substr(start [, length])
+		// Первый аргумент имеет такой же смысл, как и в substring, а второй содержит не конечную позицию, а количество символов.
+		console.log(str.substr(6, 10)); // JavaScript
+
+
+		// slice(start [, end])
+		// Возвращает часть строки от позиции start до, но не включая, позиции end. Смысл параметров – такой же как в substring.
+		console.log(str.slice(6, 16)); // JavaScript
+
+		// Отличие substring и slice в работе с отрицательными значениями
+		console.log(str.substring(-6)); // I'm a JavaScript programmer
+		console.log(str.slice(-6)); // rammer
+
+		console.log(str.slice(6, -11)); // JavaScript
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
